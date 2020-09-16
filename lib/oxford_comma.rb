@@ -1,16 +1,16 @@
 def oxford_comma(array)
 
-    if arr.length == 1
-        arr.join
-    elsif arr.length == 2
-        arr.join(" and ")
+    if array.length == 1
+        array.join
+    elsif array.length == 2
+        array.join(" and ")
     else
 
-        arr.each.collect do |value|
-            if value == arr[-1]
-                arr[-1] = "and " << value
+        array.each.collect do |value|
+            if value == array[-1]
+                array[-1] = "and " << value
             end
         end
-        arr.join(", ")
+        array.join(", ")
     end
 end
